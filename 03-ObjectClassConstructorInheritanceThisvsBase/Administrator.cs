@@ -1,4 +1,5 @@
-class Administrator : Person
+namespace _03_ObjectClassConstructorInheritanceThisvsBase;
+    class Administrator : Person
 {
     public string Position;
     public string Department;
@@ -20,8 +21,8 @@ class Administrator : Person
         Console.WriteLine($"Department: {this.Department}");
         Console.WriteLine($"AccessLevel: {this.AccessLevel}");
     }
-    public void GrantAccess()  
+    public void GrantAccess(string sn)  
     {
-        Console.WriteLine($"Systemə received login permission.");
+        Console.WriteLine($"Access granted to student {sn}");
     }
 }

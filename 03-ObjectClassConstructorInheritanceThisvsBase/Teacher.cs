@@ -1,3 +1,4 @@
+namespace _03_ObjectClassConstructorInheritanceThisvsBase;
 class Teacher : Person
 {
     public string Department;

@@ -1,8 +1,9 @@
-﻿using System;
+﻿namespace _03_ObjectClassConstructorInheritanceThisvsBase;
+using System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
         Student student1 = new Student("Ehmed", "Aliyev", 19, "ehmed@gmail.com", "H001",
             "101", "İT", 88.5, 1);
@@ -12,11 +13,11 @@ class Program
             "103", "İT", 68.5, 1); 
         
         student1.ShowStudentInfo();
-        student1.CalculateScholarship();
+        Console.WriteLine($"Scholar salary: {student1.CalculateScholarship()}");
         student2.ShowStudentInfo();
-        student2.CalculateScholarship();
+        Console.WriteLine($"Scholar salary: {student2.CalculateScholarship()}");
         student3.ShowStudentInfo();
-        student3.CalculateScholarship();
+        Console.WriteLine($"Scholar salary: {student3.CalculateScholarship()}");
         
         Teacher teacher1 = new Teacher("Akif", "Mammadov", 47, "akif@gmail.com", "HH20",
             "İTT", "Proqrammlaşdirma",  2000, 15);
@@ -24,21 +25,21 @@ class Program
             "İTT", "Excel", 1000, 8);
         
         teacher1.ShowTeacherInfo();
-        teacher1.CalculateSalary();
+        Console.WriteLine($"Salary: {teacher1.CalculateSalary()}");
         teacher2.ShowTeacherInfo();
-        teacher2.CalculateSalary();
+        System.Console.WriteLine($"Salary: {teacher2.CalculateSalary()}");
         
         Administrator administrator = new Administrator("Almaz", "Demirova", 63, "almaz@gmail.com", "A001",
             "Dekan", "İTT", 5);
         
         administrator.ShowAdminInfo();
-        administrator.GrantAccess();
+        administrator.GrantAccess(student1.StudentNumber);
         
         double sumScholarSalary = student1.CalculateScholarship() + student2.CalculateScholarship() + student3.CalculateScholarship();
-        Console.WriteLine(sumScholarSalary);
+        Console.WriteLine($"Total scholar salary: {sumScholarSalary}");
         
         double sumSalary = teacher1.CalculateSalary() + teacher2.CalculateSalary();
-        Console.WriteLine(sumSalary);
+        Console.WriteLine($"Total salary: {sumSalary}");
     }
     
 }

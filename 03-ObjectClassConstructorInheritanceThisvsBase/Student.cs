@@ -1,3 +1,4 @@
+namespace _03_ObjectClassConstructorInheritanceThisvsBase;
 class Student : Person
 {
     public string StudentNumber;
@@ -17,7 +18,7 @@ class Student : Person
     
     public void ShowStudentInfo()
     {
-        ShowStudentInfo();
+        ShowBasicInfo();
         Console.WriteLine($"Number: {StudentNumber}");
         Console.WriteLine($"Faculty: {Faculty}");
         Console.WriteLine($"GPA: {GPA}");
@@ -26,7 +27,7 @@ class Student : Person
 
     public int CalculateScholarship()
     {
-        if (GPA >= 90) return 500;
+        if (GPA >= 90) return 500; 
         else if (GPA >= 80) return 350;
         else if (GPA >= 70) return 200;
         else return 0;

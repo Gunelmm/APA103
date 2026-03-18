@@ -1,3 +1,4 @@
+namespace _03_ObjectClassConstructorInheritanceThisvsBase;
 public class Person
 {
     public string FirstName;
@@ -15,9 +16,9 @@ public class Person
         this.Id = id;
     }
     
-    public string GetFullName()
+    public void GetFullName()
     {
-        return "{this.FirstName} {this.LastName}";
+        Console.WriteLine($"Name: {this.FirstName} {this.LastName}");
     }
     public void ShowBasicInfo()
     {

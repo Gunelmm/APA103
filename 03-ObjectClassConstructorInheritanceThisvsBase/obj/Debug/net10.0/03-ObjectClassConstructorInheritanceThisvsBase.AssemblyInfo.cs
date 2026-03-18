@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("03-ObjectClassConstructorInheritanceThisvsBase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5891b206152e5f522ff7fb2a992cab0926a1c4d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0130d08092d0b6285e215db69317ef69050874ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("03-ObjectClassConstructorInheritanceThisvsBase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("03-ObjectClassConstructorInheritanceThisvsBase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
