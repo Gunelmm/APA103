@@ -35,9 +35,6 @@ namespace _05_AbstractClassPolmorphismForEach
                 trunk2.ShowTruckInfo();
                 Console.WriteLine(trunk2.CalculateFuelCost(800.0));
                 
-                // totalVehicleCount
-                // AverageMaxSpeed
-                // VehicleExpensiveCost
             }
         }
 }
