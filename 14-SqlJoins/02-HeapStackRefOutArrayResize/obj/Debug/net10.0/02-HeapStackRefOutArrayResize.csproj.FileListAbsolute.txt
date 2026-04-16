@@ -1,0 +1,15 @@
+/Users/mammadovagunel/APA103/02-HeapStackRefOutArrayResize/bin/Debug/net10.0/02-HeapStackRefOutArrayResize
+/Users/mammadovagunel/APA103/02-HeapStackRefOutArrayResize/bin/Debug/net10.0/02-HeapStackRefOutArrayResize.deps.json
+/Users/mammadovagunel/APA103/02-HeapStackRefOutArrayResize/bin/Debug/net10.0/02-HeapStackRefOutArrayResize.runtimeconfig.json
+/Users/mammadovagunel/APA103/02-HeapStackRefOutArrayResize/bin/Debug/net10.0/02-HeapStackRefOutArrayResize.dll
+/Users/mammadovagunel/APA103/02-HeapStackRefOutArrayResize/bin/Debug/net10.0/02-HeapStackRefOutArrayResize.pdb
+/Users/mammadovagunel/APA103/02-HeapStackRefOutArrayResize/obj/Debug/net10.0/02-HeapStackRefOutArrayResize.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mammadovagunel/APA103/02-HeapStackRefOutArrayResize/obj/Debug/net10.0/02-HeapStackRefOutArrayResize.AssemblyInfoInputs.cache
+/Users/mammadovagunel/APA103/02-HeapStackRefOutArrayResize/obj/Debug/net10.0/02-HeapStackRefOutArrayResize.AssemblyInfo.cs
+/Users/mammadovagunel/APA103/02-HeapStackRefOutArrayResize/obj/Debug/net10.0/02-HeapStackRefOutArrayResize.csproj.CoreCompileInputs.cache
+/Users/mammadovagunel/APA103/02-HeapStackRefOutArrayResize/obj/Debug/net10.0/02-HeapStackRefOutArrayResize.sourcelink.json
+/Users/mammadovagunel/APA103/02-HeapStackRefOutArrayResize/obj/Debug/net10.0/02-HeapStackRefOutArrayResize.dll
+/Users/mammadovagunel/APA103/02-HeapStackRefOutArrayResize/obj/Debug/net10.0/refint/02-HeapStackRefOutArrayResize.dll
+/Users/mammadovagunel/APA103/02-HeapStackRefOutArrayResize/obj/Debug/net10.0/02-HeapStackRefOutArrayResize.pdb
+/Users/mammadovagunel/APA103/02-HeapStackRefOutArrayResize/obj/Debug/net10.0/02-HeapStackRefOutArrayResize.genruntimeconfig.cache
+/Users/mammadovagunel/APA103/02-HeapStackRefOutArrayResize/obj/Debug/net10.0/ref/02-HeapStackRefOutArrayResize.dll
