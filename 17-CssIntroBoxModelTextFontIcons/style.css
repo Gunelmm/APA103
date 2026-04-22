@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.poster {
+    text-align: center;
+    padding: 80px 20px;
+
+    background: url(https://st2.depositphotos.com/4072575/9997/i/950/depositphotos_99975072-stock-photo-cream-paper-texture-background-for.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.poster h2 {
+    margin-bottom: -30px;
+    letter-spacing: 8px;
+    font-size: 50px;
+    color: rgb(129, 114, 28);
+}
+.poster h1 {
+    margin-top: 0;
+    margin-bottom: -20px;
+    font-size: 170px;
+    font-family: cursive;
+    line-height: 1;
+    letter-spacing: 0;
+}
+.poster h3 {
+    margin-top: 45px;
+    letter-spacing: 8px;
+    font-size: 30px;
+    color: rgb(20, 18, 18);
+}
+.poster p{
+    color: #a99e2a;
+    font-size: 22px;
+    font-family: cursive;
+}
+.posterbottom {
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96dfd877-6c12-43bd-b00d-92cb788dd96e/diejvoo-25feb0cf-8c3f-4d56-b08f-359c87274baf.jpg/v1/fill/w_1194,h_669,q_70,strp/an_aged__vintage_paper_texture_with_subtle_creases_by_eneakelo_diejvoo-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi85NmRmZDg3Ny02YzEyLTQzYmQtYjAwZC05MmNiNzg4ZGQ5NmUvZGllanZvby0yNWZlYjBjZi04YzNmLTRkNTYtYjA4Zi0zNTljODcyNzRiYWYuanBnIiwiaGVpZ2h0IjoiPD0xMDc3Iiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiL3dtLzk2ZGZkODc3LTZjMTItNDNiZC1iMDBkLTkyY2I3ODhkZDk2ZS9lbmVha2Vsby00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.8kAMP52CAUSR5csu4VC-UgZB8yl2uyy-HsdxlKJq3Cg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    color: aliceblue;
+    text-align: center;
+    font-size: 50;
+    letter-spacing: 3px;
+    padding: 40px 20px;
+}
+.poster2 {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    padding: 40px;
+    width: 800px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.time {
+    width: 300px;
+    color: rgb(2, 157, 246);
+    font-size: 25px;
+    font-weight: bold;
+}
+.text {
+    width: 520px;
+    line-height: 1.6;
+    color: #000;
+    text-align: justify;
+}
+.boldtext {
+    font-style: italic;
+    font-weight: bold;
+    text-align: justify;
+}
+.poster3 {
+    text-align: center;
+}
+.image {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto 40px;
+    background: url(https://oyla.us/wp-content/uploads/2023/08/forest1.jpg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+.poster3 p {
+    width: 60%;
+    text-align: center;
+    margin: 20px auto 80px;
+    color:#a99e2a
+}
+.poster3 p:first-of-type {
+    margin-top: -330px;
+}
+hr {
+    border: none;
+    height: 2px;
+    background: #000;
+    margin-bottom: 10px;
+}
+.poster3 p::before {
+    content: "";
+}
+.poster3 h3 {
+    font-weight: bold;
+    margin-top: 50px;
+    color: #000;
+}
+.poster3 h2 {
+    margin-top: -28px;
+    font-size: 30px;
+    font-family: cursive;
+    color: rgb(206, 49, 101);
+}
