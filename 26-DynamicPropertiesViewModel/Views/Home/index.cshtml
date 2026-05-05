@@ -1,0 +1,48 @@
+@using _26_DynamicPropertiesViewModel.Models
+@model _26_DynamicPropertiesViewModel.ViewModels.HomeVM
+
+<!DOCTYPE html>
+
+<html lang="">
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    <h1>Home Page</h1>
+    <h1>@TempData["Name"]</h1>
+    <div>
+        <ul>
+            @foreach (Student student in ViewBag.Students)
+            {
+                <li>@student.Id-@student.Name-@student.Age</li>
+            }
+        </ul>
+    </div>
+    <div>
+        <ul>
+            @foreach (Student student in (ViewData["Students"] as List<Student>)!)
+            {
+                <li>@student.Id-@student.Name-@student.Age</li>
+            }
+        </ul>
+    </div>
+    <div>
+        <ul>
+            @foreach (Student student in Model.Students)
+            {
+                <li>@student.Id-@student.Name-@student.Age</li>
+            }
+        </ul>
+    </div>
+    <table style="border: 1px solid black">
+        @foreach (Teacher teacher in Model.Teachers)
+        {
+            <tr>
+                <td>@teacher.Id-@teacher.Name-@teacher.Salary</td>
+            </tr>
+        }
+    </table>
+</div>
+</body>
+</html>
