@@ -9,9 +9,6 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("default"));
 });
 
-// builder.Services.AddSingleton<EmailService>();
-
-
 var app = builder.Build();
 
 app.UseStaticFiles();

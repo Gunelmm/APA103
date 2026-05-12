@@ -8,14 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="wwwroot\assets\.idea\.gitignore" />
-    <Content Include="wwwroot\assets\.idea\encodings.xml" />
-    <Content Include="wwwroot\assets\.idea\indexLayout.xml" />
-    <Content Include="wwwroot\assets\.idea\projectSettingsUpdater.xml" />
-    <Content Include="wwwroot\assets\.idea\workspace.xml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\assets\images\website-images\blueRose.jpg" />
   </ItemGroup>
 
