@@ -18,24 +18,22 @@ public class ShopController : Controller
         return View();
     }
 
-    public IActionResult Details(int? id)
+    public async Task<IActionResult> Details(int? id)
     {
-        if (id is null || id < 1)
-        {
-            return BadRequest();
-        }
-        Product? product = _dbContext.Products
+        if (id is null || id < 1) return BadRequest();
+        
+        Product? product = await _dbContext.Products
             .Where(p => !p.IsDeleted)
             .Include(p=>p.ProductImages)
             .Include(p=>p.Category)
-            .FirstOrDefault(p=>p.Id == id);
+            .FirstOrDefaultAsync(p=>p.Id == id);
         
-        List<Product>? relatedProduct = _dbContext.Products
+        List<Product>? relatedProduct = await _dbContext.Products
             .Where(p => !p.IsDeleted)
             .Include(p=>p.ProductImages.Where(pi => pi.IsPrimary != null))
             .Where(p => p.CategoryId == product.CategoryId && p.Id != id)
             .Take(4)
-            .ToList();
+            .ToListAsync();
         
         if (product is null) return NotFound();
         

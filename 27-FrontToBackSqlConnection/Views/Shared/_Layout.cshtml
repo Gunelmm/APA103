@@ -45,7 +45,7 @@
         </div>
       </div>
     </div>
-    <div class="main-wrapper">
+  <div class="main-wrapper">
       <!-- Begin Main Header Area -->
       <header class="main-header-area">
         <div class="header-top bg-pronia-primary d-none d-lg-block">
@@ -193,7 +193,7 @@
                   <nav class="main-nav">
                     <ul>
                       <li class="drop-holder">
-                        <a href="index.html">Home</a>
+                        <a asp-controller="home" asp-action="index">Home</a>
                         <ul class="drop-menu">
                           <li>
                             <a href="index.html">Home One</a>
@@ -204,7 +204,7 @@
                         </ul>
                       </li>
                       <li class="megamenu-holder">
-                        <a href="shop.html">Shop</a>
+                        <a asp-controller="shop" asp-action="index">Shop</a>
                         <ul class="drop-menu megamenu">
                           <li>
                             <span class="title">Shop Layout</span>
@@ -699,47 +699,36 @@
                             </li>
                             <li>
                               <a href="shop-list-left-sidebar.html">
-                                <span class="mm-text"
-                                  >Shop List Left Sidebar</span
-                                >
+                                <span class="mm-text">Shop List Left Sidebar</span>
                               </a>
                             </li>
                             <li>
                               <a href="shop-list-right-sidebar.html">
-                                <span class="mm-text"
-                                  >Shop List Right Sidebar</span
-                                >
+                                <span class="mm-text">Shop List Right Sidebar</span>
                               </a>
                             </li>
                           </ul>
                         </li>
                         <li class="menu-item-has-children">
                           <a href="#">
-                            <span class="mm-text"
-                              >Product Style
+                            <span class="mm-text">Product Style
                               <i class="pe-7s-angle-down"></i>
                             </span>
                           </a>
                           <ul class="sub-menu">
                             <li>
                               <a href="single-product.html">
-                                <span class="mm-text"
-                                  >Single Product Default</span
-                                >
+                                <span class="mm-text">Single Product Default</span>
                               </a>
                             </li>
                             <li>
                               <a href="single-product-group.html">
-                                <span class="mm-text"
-                                  >Single Product Group</span
-                                >
+                                <span class="mm-text">Single Product Group</span>
                               </a>
                             </li>
                             <li>
                               <a href="single-product-variable.html">
-                                <span class="mm-text"
-                                  >Single Product Variable</span
-                                >
+                                <span class="mm-text">Single Product Variable</span>
                               </a>
                             </li>
                             <li>
@@ -749,24 +738,19 @@
                             </li>
                             <li>
                               <a href="single-product-sticky.html">
-                                <span class="mm-text"
-                                  >Single Product Sticky</span
-                                >
+                                <span class="mm-text">Single Product Sticky</span>
                               </a>
                             </li>
                             <li>
                               <a href="single-product-affiliate.html">
-                                <span class="mm-text"
-                                  >Single Product Affiliate</span
-                                >
+                                <span class="mm-text">Single Product Affiliate</span>
                               </a>
                             </li>
                           </ul>
                         </li>
                         <li class="menu-item-has-children">
                           <a href="#">
-                            <span class="mm-text"
-                              >Product Related
+                            <span class="mm-text">Product Related
                               <i class="pe-7s-angle-down"></i>
                             </span>
                           </a>
@@ -1049,8 +1033,8 @@
         <div class="global-overlay"></div>
       </header>
       <!-- Main Header Area End Here -->
-        @RenderBody()
-    <!-- Begin Footer Area -->
+      @RenderBody()
+<!-- Begin Footer Area -->
       <div
         class="footer-area"
         data-bg-image="assets/images/footer/bg/1-1920x465.jpg"
@@ -1470,6 +1454,3 @@
     <script src="~/assets/js/main.js"></script>
   </body>
 </html>
-
-
-@await RenderSectionAsync("Scripts", required: false)

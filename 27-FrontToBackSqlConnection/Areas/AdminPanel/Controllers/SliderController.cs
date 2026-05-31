@@ -1,12 +1,22 @@
+using _27_FrontToBackSqlConnection.Data;
+using _27_FrontToBackSqlConnection.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers;
 
 public class SliderController : Controller
 {
-    // GET
-    public IActionResult Index()
+    private readonly AppDbContext _dbContext;
+
+    public SliderController(AppDbContext dbContext)
     {
-        return View();
+        _dbContext = dbContext;
+    }
+    public async Task<IActionResult> Index()
+    {
+        List<Slider> sliders = await _dbContext.Sliders.Where(s => !s.IsDeleted).ToListAsync();
+        
+        return View(sliders);
     }
 }

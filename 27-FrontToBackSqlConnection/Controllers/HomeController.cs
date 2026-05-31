@@ -14,21 +14,21 @@ public class HomeController : Controller
     {
         _dbContext = dbContext;
     }
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        List<Slider> sliders = _dbContext.Sliders
+        List<Slider> sliders = await _dbContext.Sliders
             .OrderBy(s=>s.Order)
             .Where(s=>!s.IsDeleted)
             .Take(2)
-            .ToList();
+            .ToListAsync();
         
-        List<Product> products = _dbContext.Products
+        List<Product> products = await _dbContext.Products
             .Where(p=>!p.IsDeleted)
             .Include(p => p.ProductImages.Where(pi=> pi.IsPrimary != null))
-            .ToList();
+            .ToListAsync();
         
         HomeVM homeVM = new()
-            {Sliders = sliders, Products = products, };
+            {Sliders = sliders, Products = products };
         return View(homeVM);
     }
 }
